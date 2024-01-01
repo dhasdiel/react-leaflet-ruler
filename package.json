@@ -1,0 +1,34 @@
+{
+  "name": "react-leaflet-ruler",
+  "version": "1.0.0",
+  "description": "a ruler plugin for react-leaflet",
+  "main": "dist/index.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.ts"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhasdiel/react-leaflet-ruler.git"
+  },
+  "author": "Daniel Hasdiel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhasdiel/react-leaflet-ruler/issues"
+  },
+  "homepage": "https://github.com/dhasdiel/react-leaflet-ruler#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
