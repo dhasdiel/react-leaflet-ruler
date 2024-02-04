@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-ruler",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a ruler plugin for react-leaflet",
   "main": "dist/index.js",
   "files": [
@@ -28,9 +28,12 @@
   "homepage": "https://github.com/dhasdiel/react-leaflet-ruler#readme",
   "devDependencies": {
     "@types/react": "^18.2.48",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "@types/leaflet": "^1.9.8"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "leaflet": "^1.9.4",
+    "react": "^18.2.0",
+    "react-leaflet": "^4.2.1"
   }
 }
