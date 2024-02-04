@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-ruler",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "a ruler plugin for react-leaflet",
   "main": "dist/index.js",
   "files": [

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "../dist/leaflet-ruler";
 import "../dist/leaflet-ruler.css";
 import { useMap } from "react-leaflet";
@@ -21,12 +21,23 @@ interface ExtendMap extends L.Map {
 }
 
 const Ruler = () => {
-  const map: ExtendMap = useMap();
+  const map = useMap();
+  const rulerRef = useRef<LeafletRuler | null>(null); // Store ruler instance
 
   useEffect(() => {
     if (!map) return;
-    (L.control as any).ruler().addTo(map);
-  }, []);
+
+    const ruler = (L.control as any).ruler();
+    rulerRef.current = ruler; // Store in ref for later access
+    map.addControl(ruler);
+
+    return () => {
+      // Cleanup function to remove ruler when component unmounts
+      if (rulerRef.current) {
+        map.removeControl(rulerRef.current);
+      }
+    };
+  }, [map]);
 
   return null;
 };
