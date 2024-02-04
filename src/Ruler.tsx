@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import "./leaflet-ruler";
-import "./leaflet-ruler.css";
+import "../dist/leaflet-ruler";
+import "../dist/leaflet-ruler.css";
 import { useMap } from "react-leaflet";
 import L from "leaflet";
 

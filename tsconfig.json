@@ -1,5 +1,8 @@
 {
-  "include": ["src"], /* Include only the src directory */
+  "include": [
+    "src",
+    "dist/leaflet-ruler.js"
+  ] /* Include only the src directory */,
   "compilerOptions": {
     "jsx": "react",
     "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
