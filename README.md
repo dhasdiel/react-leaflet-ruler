@@ -1,6 +1,6 @@
 # React-Leaflet-Ruler 📏🗺️
 
-React-Leaflet-Ruler is a ruler plugin for react-leaflet that create from leaflet-ruler repository [leaflet-ruler repository](https://github.com/gokertanrisever/leaflet-ruler).
+React-Leaflet-Ruler is a ruler plugin for react-leaflet that create from [leaflet-ruler repository](https://github.com/gokertanrisever/leaflet-ruler).
 
 ## Installation
 
